@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <!-- static css I WROTE IT-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- sass style css  -->
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--  web header -->
+    <!-- <div class="container header">
+        <div class="row">
+            <h1 class="col-12 col-sm-8 col-md-6 col-xl-3 col-xxl-3 border text-center">Hello World</h1>
+        </div>
+    </div> -->
+    <!-- web body -->
+    <div class="container">
+        <!-- row one -->
+        <div class="row">
+            <!-- sharing length of display "12" if there is no col number, those cols below will be sharing the 12 -->
+            <div class=" col border">col.1</div>
+            <div class=" col border">col.1</div>
+            <div class=" col border">col.1</div>
+        </div>
+        <!-- row two -->
+        <div class="row mt-3">
+            <!-- sharing length of display "12" diffrent width-->
+            <div class="col-12 col-sm-4  ycol-md-2 col-xl-1 col-xxl-1 border">col.1</div>
+            <div class="col-12 col-sm-4 col-md-2 col-xl-1 col-xxl-1 border">col.1</div>
+            <div class="col-12 col-sm-4 col-md-2 col-xl-1 col-xxl-1 border">col.1</div>
+        </div>
+        <!-- row three -->
+        <div class="row mt-5">
+            <!-- "break point", rejoing  "d-block, d-lg-none" text length "auto" -->
+            <div class=" col-auto border">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class=" col border">col.2</div>
+            <div class=" col border">col.3</div>
+            <div class=" col border">col.4</div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div class=" col border">col.5</div>
+            <div class=" col border">col.6</div>   
+        </div>
+        <!-- row four -->
+        <div class="row mt-5">
+            <!-- "col wrap" some of colums have longer width order than other so still 
+                those other cols share left over space of 12 OR next jump  to next line -->
+            <div class=" col-8 border">using 8</div>
+            <div class=" col-4 border">using 4</div>
+            <div class=" col border">col.3</div>
+            <div class=" col border">col.4</div>
+            <div class=" col-7 border">using 7</div>
+            <div class=" col-3 border">using 3</div>  
+            <div class=" col border">col.7</div>  
+
+        </div>
+         <!-- row five -->
+         <div class="row mt-5">
+            <!-- "order" method how to change col location. THEN  
+                if change screen width, those switched cols go back to first location--> 
+            <div class=" col order-4 order-xl-1 border">order.1</div>
+            <div class=" col order-2 order-xl-2  border">order.2</div>
+            <div class=" col order-3 order-xl-3 border">order.3</div>
+            <div class=" col order-1 order-xl-4 border">order.4</div>
+        </div>
+        <!-- row six -->
+        <div class="row mt-5">
+           <!-- col "offset" method: take space between cols but  still share 12 -->
+            <div class=" col-1 border">offset.1</div>
+            <div class=" col-1 offset-2 border">offset.2</div>
+            <div class=" col-2 offset-4 border">offset.3</div>
+            <div class=" col-2 border">offset.4</div>
+        </div>
+    </div>
+    
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
