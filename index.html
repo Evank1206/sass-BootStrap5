@@ -20,22 +20,44 @@
     </div> -->
     <!-- web body -->
     <div class="container">
+        <h3 class="mt-5">**** MARGIN; PADDING ****</h3>
+        <div class="row border mt-5">
+            <!-- sharing length of display "12" if there is no col number, those cols below will be sharing the 12 -->
+            <div class=" col-2 ms-3 border">marginstart-3</div>
+            <div class=" col-2 mx-5 border">margin left&right-5</div>
+            <div class=" col-2 my-2 border">margintop & bottom-2</div>
+            <div class=" col-2 ms-auto border">marginend-auto</div>
+
+        </div>
+        <h3 class="mt-5">**** GUTTER: hevtee tenhleg space: gx; bosoo ni: gy; ****</h3>
+        <div class="row border gx-5 gy-3 gx-sm-1 mt-5">
+            <!-- sharing length of display "12" if there is no col number, those cols below will be sharing the 12 -->
+            <div class=" col-3 border">gutter</div>
+            <div class=" col-3 border">gutter</div>
+            <div class=" col-3 border">gutter</div>
+            <div class=" col-3 border">gutter</div>
+
+        </div>
+
+        <h3 class="mt-5">**** COLUMS ****</h3>
         <!-- row one -->
-        <div class="row">
+        <div class="row mt-5">
             <!-- sharing length of display "12" if there is no col number, those cols below will be sharing the 12 -->
             <div class=" col border">col.1</div>
             <div class=" col border">col.1</div>
             <div class=" col border">col.1</div>
         </div>
         <!-- row two -->
-        <div class="row mt-3">
+        <div class="row mt-5">
+            <h5>col-12 col-sm-4  ycol-md-2 col-xl-1 col-xxl-1 border</h5>
             <!-- sharing length of display "12" diffrent width-->
-            <div class="col-12 col-sm-4  ycol-md-2 col-xl-1 col-xxl-1 border">col.1</div>
+            <div class="col-12 col-sm-4 col-md-2 col-xl-1 col-xxl-1 border">col.1</div>
             <div class="col-12 col-sm-4 col-md-2 col-xl-1 col-xxl-1 border">col.1</div>
             <div class="col-12 col-sm-4 col-md-2 col-xl-1 col-xxl-1 border">col.1</div>
         </div>
         <!-- row three -->
         <div class="row mt-5">
+            <h5>col border</h5>
             <!-- "break point", rejoing  "d-block, d-lg-none" text length "auto" -->
             <div class=" col-auto border">Lorem ipsum dolor sit amet consectetur.</div>
             <div class=" col border">col.2</div>
@@ -47,6 +69,7 @@
         </div>
         <!-- row four -->
         <div class="row mt-5">
+            <h5>col wrap: col-num border</h5>
             <!-- "col wrap" some of colums have longer width order than other so still 
                 those other cols share left over space of 12 OR next jump  to next line -->
             <div class=" col-8 border">using 8</div>
@@ -60,6 +83,7 @@
         </div>
          <!-- row five -->
          <div class="row mt-5">
+            <h5>col order-4 order-xl-1</h5>
             <!-- "order" method how to change col location. THEN  
                 if change screen width, those switched cols go back to first location--> 
             <div class=" col order-4 order-xl-1 border">order.1</div>
@@ -69,14 +93,83 @@
         </div>
         <!-- row six -->
         <div class="row mt-5">
+            <h5>col-1 offset-2</h5>
            <!-- col "offset" method: take space between cols but  still share 12 -->
             <div class=" col-1 border">offset.1</div>
             <div class=" col-1 offset-2 border">offset.2</div>
             <div class=" col-2 offset-4 border">offset.3</div>
             <div class=" col-2 border">offset.4</div>
         </div>
+
+        
+        <h3 class="mt-5">**** ROW ****</h3>
+        <h5>align-items-start; center; end</h5>
+
+        <div class="row mt-5 align-items-center border css-row">
+           <!-- col "offset" method: take space between cols but  still share 12 -->
+            <div class=" col border align-self-start">align-self-start</div>
+            <div class=" col border">center</div>
+            <div class=" col border">center</div>
+            <div class=" col border align-self-end">align-self-end</div>
+        </div>
+
+        <h5 class="mt-5">6 WAY TO POSITION A ROW: justify-content-start; center; end; around; between; evenly</h5>
+
+        <div class="row mt-5 justify-content-start border">
+           <!-- col "offset" method: take space between cols but  still share 12 -->
+            <div class=" col-2 m-2 border">start</div>
+            <div class=" col-2 border">start</div>
+            <div class=" col-2 border">start</div>
+            <div class=" col-2 border">start</div>
+        </div>
+        <div class="row mt-5 justify-content-center border">
+            <!-- col "offset" method: take space between cols but  still share 12 -->
+             <div class=" col-2 border">center</div>
+             <div class=" col-2 border">center</div>
+             <div class=" col-2 border">center</div>
+             <div class=" col-2 border">center</div>
+         </div>
+         <div class="row mt-5 justify-content-end border">
+            <!-- col "offset" method: take space between cols but  still share 12 -->
+             <div class=" col-2 border">end</div>
+             <div class=" col-2 border">end</div>
+             <div class=" col-2 border">end</div>
+             <div class=" col-2 border">end</div>
+         </div>
+         <div class="row mt-5 justify-content-around border">
+            <!-- col "offset" method: take space between cols but  still share 12 -->
+             <div class=" col-2 border">around</div>
+             <div class=" col-2 border">around</div>
+             <div class=" col-2 border">around</div>
+             <div class=" col-2 border">around</div>
+         </div>
+         <div class="row mt-5 justify-content-between border">
+            <!-- col "offset" method: take space between cols but  still share 12 -->
+             <div class=" col-2 border">between</div>
+             <div class=" col-2 border">between</div>
+             <div class=" col-2 border">between</div>
+             <div class=" col-2 border">between</div>
+         </div>
+         <div class="row mt-5 justify-content-evenly border">
+            <!-- col "offset" method: take space between cols but  still share 12 -->
+             <div class=" col-2 border">evenly</div>
+             <div class=" col-2 border">evenly</div>
+             <div class=" col-2 border">evenly</div>
+             <div class=" col-2 border">evenly</div>
+         </div>
+
+         <h5 class="mt-5">ROW-COLS: row-cols-num border</h5>
+         <div class="row my-5 border row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+            <div class=" col border">row-cols</div>
+            <div class=" col border">row-cols</div>
+            <div class=" col border">col-cols</div>
+            <div class=" col border">row-cols</div>
+            <div class=" col border">row-cols</div>
+            <div class=" col border">row-cols</div> 
+
+        </div>
+
     </div>
-    
     <script src="./js/bootstrap.js"></script>
 </body>
 </html>
