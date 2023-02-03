@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <!-- static css I WROTE IT-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- sass style css  -->
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-5">COLLAPSE</h3>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample"  >
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+              Button with data-target
+            </button>
+        </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body" style="width: 200px;">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+
+        <h3 class="mt-5">ACCORDION</h3>
+
+          <div class="accordion" id="myAccordion">
+            <!-- one -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#calONE">ONE</button>
+                </h3>
+                <div class="collapse accordion-collapse show" id="calONE">
+                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, facilis!</p>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#calTWO">TWO</button>
+                </h3>
+                <div class="collapse accordion-collapse show" id="calTWO">
+                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, facilis!</p>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#calTHREE">THREE</button>
+                </h3>
+                <div class="collapse accordion-collapse show" id="calTHREE">
+                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, facilis!</p>
+                </div>
+            </div>
+
+
+          </div>
+
+
+    </div>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>

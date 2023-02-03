@@ -46,6 +46,53 @@
         </div>
 
     </div>
+<!-- slide photos & background photos -->
+<!-- full herizontal background -->
+    <div class="container-fluid"> 
+        <div class="col mt-5">
+            <!-- data-bs-carousel for slide -->
+            <div id="myClick" class="carousel slide" data-bs-ride="carousel">
+                <!-- carousel-inner for slide -->
+                <div class="carousel-inner" >
+                    <!-- first image: 
+                        one photo will be active  data-bs-interval="2000": is for  speed for next photo-->
+                    <div class="carousel-item active " data-bs-interval="2000">
+                        <!-- d-block w-100 for full the display -->
+                        <img src="https://unsplash.it/1920/1080" class="d-block w-100"/>
+                        <div class="carousel-caption">
+                            <h3>Heading</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, maiores?</p>
+                        </div>
+                    </div>
+                    <!-- second image: -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://unsplash.it/1919/1079" class="d-block w-100"/>
+                    </div>
+                    <!-- third image: -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://unsplash.it/1918/1078" class="d-block w-100"/>
+                    </div>
+                </div>
+                <!-- left arrow button -->
+                <button type="button" data-bs-target="#myClick" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="visually-hidden">Prev</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <!-- right arrow button  -->
+                <button type="button" data-bs-target="#myClick" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- BUTTON indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#myClick" data-bs-slide="0" aria-current="true" aria-label="slide1" ></button>
+                    <button type="button"  data-bs-target="#myClick" data-bs-slide="1" aria-current="true" aria-label="slide2" ></button>
+                    <button type="button"  data-bs-target="#myClick" data-bs-slide="2" aria-current="true" aria-label="slide3" ></button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
   
     <script src="./js/bootstrap.js"></script>
 </body>
